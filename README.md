@@ -17,9 +17,13 @@ Once installed the **Book** element set is added to **Edit Items**. If any conte
 The **Book** element set contains the following fields:
 
 Title 					=> Title and Subtitle are mapped onto dc:title 
+
 Subtitle					   separated by ' : '
+
 Author/Editor 	=> dc:creator
+
 Publisher 			=> dc:publisher
+
 Year Published	=> dc:date
 Blurb					=> dc:description
 Keywords			=> dc:subject
