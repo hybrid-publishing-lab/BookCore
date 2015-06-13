@@ -16,10 +16,11 @@ Once installed the **Book** element set is added to **Edit Items**. If any conte
 
 The **Book** element set contains the following fields:
 
-Title 					=> Title and Subtitle are mapped onto dc:title 
+Title
 
-Subtitle					   separated by ' : '
+Subtitle        => Title and Subtitle are mapped onto dc:title separated by ' : '	  
 
+                
 Author/Editor 	=> dc:creator
 
 Publisher 			=> dc:publisher
