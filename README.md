@@ -26,16 +26,27 @@ Author/Editor 	=> dc:creator
 Publisher 			=> dc:publisher
 
 Year Published	=> dc:date
+
 Blurb					=> dc:description
+
 Keywords			=> dc:subject
+
 ISBN Print			=> dc:identifier amended by 'ISBN Print: '
+
 ISBN PDF			=> dc:identifier amended by 'ISBN PDF: '
+
 ISBN EPUB			=> dc:identifier amended by 'ISBN EPUB: '
+
 DOI						=> dc:identifier amended by 'DOI: '
+
 Rights					=> dc:rights
+
 Language			=> dc:language
+
 Type					=> dc:type
+
 Format				=> dc:format
+
 
 ##License
 This plugin is licensed under GNU General Public License Version 3 <http://www.gnu.org/licenses/gpl-3.0.txt>.
