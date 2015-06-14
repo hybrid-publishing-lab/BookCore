@@ -2,7 +2,7 @@
 BookCore Plugin for Omeka adding a custom metadata set tailored for books
 
 ##General Description
-The BookCore Plugin adds an element set "Book" to Omeka <http://omeka.org/> tailored for book publications and maps entries in the Book element set to the Dublin Core element set.
+The BookCore Plugin adds an element set "Book" to Omeka (<http://omeka.org/>) tailored for book publications and maps entries in the Book element set to the Dublin Core element set.
 
 The plugin has been developed for and tested with Omeka 2.3.
 
