@@ -14,12 +14,23 @@
 
 class BookCorePlugin extends Omeka_Plugin_AbstractPlugin
 {
-        protected $_hooks = array(
+       
+
+    /**
+     * @var array Hooks for the plugin.
+     */
+    protected $_hooks = array(
         'install',
         'uninstall',
         'after_save_item'
-        );
-      
+    );
+    
+    /**
+     * @var array Filters for the plugin.
+     */
+    protected $_filters = array(
+        'admin_items_form_tabs'
+    );
     
     /**
      * Install the plugin.
@@ -250,6 +261,14 @@ class BookCorePlugin extends Omeka_Plugin_AbstractPlugin
             }
         }
     }
+
+    public function filterAdminItemsFormTabs($tabs, $args)
+    {
+        $ItemAdminOrder = array('Book' => '', 'Files' => '', 'Tags' => '', 'Item Type Metadata' => '', 'Dublin Core' => '');
+        return (array_merge ($ItemAdminOrder, $tabs));
+     //   return ($tabs);
+    }
+
 
     /**
     * Checks if any field of the Book Element Set has been filled out. If yes, true is returned.
