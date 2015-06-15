@@ -4,7 +4,7 @@
  * BookCore Plugin
  * 
  * @copyright Marcus Burkhardt
- * @license http://www.gnu.org/licenses/gpl-3.0.txt
+ * @license http://www.apache.org/licenses/LICENSE-2.0.html
  */
 
 /**
