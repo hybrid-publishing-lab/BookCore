@@ -49,4 +49,4 @@ Format				=> dc:format
 
 
 ##License
-This plugin is licensed under GNU General Public License Version 3: <http://www.gnu.org/licenses/gpl-3.0.txt>.
+This plugin is licensed under Apache License Version 2.0, http://www.apache.org/licenses/LICENSE-2.0.html
