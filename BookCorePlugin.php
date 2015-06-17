@@ -53,7 +53,7 @@ class BookCorePlugin extends Omeka_Plugin_AbstractPlugin
         array(
             'name'          => 'Author/Editor',
             'description'   => 'Name of the Authors or Editors to be added in this field: Last Name, First Name'  
-        ), 
+        ),
         array(
             'name'  => 'Publisher'
         ), 
@@ -66,6 +66,9 @@ class BookCorePlugin extends Omeka_Plugin_AbstractPlugin
         ), 
         array(
             'name'  => 'Keywords'
+        ), 
+        array(
+            'name'  => 'Series'
         ), 
         array(
             'name'  => 'ISBN Print'
@@ -143,7 +146,7 @@ class BookCorePlugin extends Omeka_Plugin_AbstractPlugin
         */
 
         $mapping = array('Title' => 'Title', 'Author/Editor' => 'Creator', 'Publisher' => 'Publisher',
-            'Year Published' => 'Date', 'Blurb' => 'Description', 'Keywords' => 'Subject', 
+            'Year Published' => 'Date', 'Blurb' => 'Description', 'Keywords' => 'Subject', 'Series' => 'Description', 
             'ISBN Print' => 'Identifier', 'ISBN PDF' => 'Identifier', 'ISBN EPUB' => 'Identifier',
             'DOI' => 'Identifier', 'Rights' => 'Rights', 'Language' => 'Language', 'Type' => 'Type',
             'Format' => 'Format');
@@ -246,6 +249,15 @@ class BookCorePlugin extends Omeka_Plugin_AbstractPlugin
                             'element_id' => $dcID, // 'element_id'
                             'html' => $html, // 'html'
                             'text' => 'DOI: ' . $bookElementText);
+                    $db->insert('element texts', $dcElementValues);
+                }
+                elseif ($bookField == 'Series') {
+                    $dcElementValues = array(
+                            'record_id' => $id, // 'record_id'
+                            'record_type' => 'Item',
+                            'element_id' => $dcID, // 'element_id'
+                            'html' => $html, // 'html'
+                            'text' => 'Series: ' . $bookElementText);
                     $db->insert('element texts', $dcElementValues);
                 }
                 else {
