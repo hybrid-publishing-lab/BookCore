@@ -29,6 +29,8 @@ Year Published	=> dc:date
 
 Blurb					=> dc:description
 
+Series			=> dc:description
+
 Keywords			=> dc:subject
 
 ISBN Print			=> dc:identifier amended by 'ISBN Print: '
